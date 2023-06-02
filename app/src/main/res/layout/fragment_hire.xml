@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Customer.HireFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:text="Enter information to advertise your need for cleaners."
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="72dp"
+            android:ems="10"
+            android:hint="Enter House Owner's Name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Enter House Address"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+        <EditText
+            android:id="@+id/edtCNo"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Enter Contact No"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddress" />
+
+        <Spinner
+            android:id="@+id/spFloorType"
+            android:layout_width="233dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtCNo"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/edtBedroom"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Enter No Of Bedrooms"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spFloorType" />
+
+        <EditText
+            android:id="@+id/edtBathroom"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Enter No Of Bathrooms"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtBedroom" />
+
+        <EditText
+            android:id="@+id/edtLocation"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Click To Slect Location"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDate" />
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Click To Select Date"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtBathroom" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="236dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="8dp"
+            android:text="Add  Your House Image"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtLocation" />
+
+        <ImageView
+            android:id="@+id/imgHouse"
+            android:layout_width="186dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/addimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/btnHire"
+            android:layout_width="118dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:text="Post Details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnView" />
+
+        <Button
+            android:id="@+id/btnEditDetails"
+            android:layout_width="118dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:text="Edit Details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btnView"
+            app:layout_constraintTop_toBottomOf="@+id/btnPrice" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="118dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:text="View Post"
+            app:layout_constraintStart_toEndOf="@+id/btnHire"
+            app:layout_constraintTop_toBottomOf="@+id/btnPrice" />
+
+        <TextView
+            android:id="@+id/txvID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnView"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgHouse"
+            app:layout_constraintVertical_bias="0.486" />
+
+        <Button
+            android:id="@+id/btnPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Calculate Price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.231"
+            app:layout_constraintStart_toEndOf="@+id/txtPrice"
+            app:layout_constraintTop_toBottomOf="@+id/imgHouse" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

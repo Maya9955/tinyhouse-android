@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tiny House</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Tiny House</string>
+    <string name="nav_header_subtitle">tinyHouse@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_hire">Hire Cleaners</string>
+    <string name="menu_confirm">Cleaner Confirmation</string>
+    <string name="menu_Jobs">View Jobs</string>
+    <string name="menu_review">View Review</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_logout">Logout</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key">AIzaSyCnp3b0pxGXnJLsDTvDmICPJmoNqLsQriU</string>
+
+
+</resources>

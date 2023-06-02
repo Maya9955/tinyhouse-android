@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tinyhouse.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_hire"
+        android:name="com.example.tinyhouse.ui.Customer.HireFragment"
+        android:label="@string/menu_hire"
+        tools:layout="@layout/fragment_hire" />
+    <fragment
+        android:id="@+id/nav_jobs"
+        android:name="com.example.tinyhouse.ui.Cleaner.ViewJobsFragment"
+        android:label="@string/menu_Jobs"
+        tools:layout="@layout/fragment_view_jobs" />
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.tinyhouse.ui.BackLoad.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+
+    <fragment
+        android:id="@+id/nav_confirm"
+        android:name="com.example.tinyhouse.ui.Customer.ConfirmCleanersFragment"
+        android:label="@string/menu_confirm"
+        tools:layout="@layout/fragment_confirm_cleaners" />
+    <fragment
+        android:id="@+id/nav_Review"
+        android:name="com.example.tinyhouse.ui.Review.ViewReviewFragment"
+        android:label="@string/menu_review"
+        tools:layout="@layout/fragment_view_review" />
+
+</navigation>
